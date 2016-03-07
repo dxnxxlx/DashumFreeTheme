@@ -13,3 +13,147 @@
 
 /*Escribe aqui tu codigo */
 
+
+
+#container{
+	width: 100%
+	height: 100%;
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    z-index: 100;
+}
+
+.black-bg {
+    background: #424A5D;
+    border-bottom: 1px solid black;
+}
+
+#main-content {
+    margin-left: 210px;
+}
+
+.sidebar-toggle-box {
+    float: left;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.sidebar-toggle-box .fa-bars {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.logo {
+    font-size: 20px;
+    color: #ffffff;
+    float: left;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+
+/*a.logo {
+    font-size: 20px;
+    color: #ffffff;
+    float: left;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+a.logo b {
+    font-weight: 900;
+}
+
+a.logo:hover, a.logo:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a.logo span {
+    color: #68dff0;
+}
+
+*/
+
+.wrapper {
+    display: inline-block;
+    margin-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    width: 100%;
+} 
+ /**PROGRESS************/
+.showback {
+	background: #ffffff;
+	padding: 15px;
+	margin-bottom: 15px;
+	box-shadow: 0px 3px 2px #aab2bd;
+}
+
+
+
+...
+/**GALLERY*************/
+.site-min-height {
+    min-height: 900px;
+}
+
+.desc{
+
+}
+
+.project:hover .photo-wrapper {
+  	background-color: #F9C029;
+	background-image:url(../img/friends/jake.jpg);
+	background-repeat:no-repeat;
+	background-size: 30%;
+	background-position:center;
+	position: relative;
+}
+
+.project:hover img.img-responsive {
+  opacity: 0.2;
+}
+
+/***TABLES********/
+
+.content-panel {
+	background: white;
+	box-shadow: 0px 3px 3px gray;
+	padding: 15px 0px 10px 0px;
+}
+.content-panel h4 {
+	margin-left: 15px;
+}
+
+
+
+/**FORM***********/
+.form-panel {
+	background: white;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 0px 3px 3px gray;
+	text-align: left;
+}
+.form-panel .control-label{
+	text-align: left;
+}
+
+
+
+
+
+.footer{
+	padding: 0 15px;
+}
+
+
