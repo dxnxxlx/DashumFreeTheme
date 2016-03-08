@@ -1,1 +1,11 @@
 /*Inserta tu Codigo Responsive*/
+@media (max-width: 767px){
+	
+	.photo-wrapper .photo{
+		margin-bottom: 25px;
+	}
+
+	.photo-wrapper img{
+		width: 100%;
+	}
+}

@@ -16,31 +16,40 @@
 
 
 #container{
-	width: 100%
+	width: 100%;
 	height: 100%;
 }
 
-.header{
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+/****HEADER************************************/
+header{
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
     padding: 0 15px;
     z-index: 100;
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
 }
 
 .black-bg {
     background: #424A5D;
     border-bottom: 1px solid black;
+    padding: 15px 10px;
 }
 
-#main-content {
-    margin-left: 210px;
-}
 
-.sidebar-toggle-box {
+.sidebar-toggle-box { 
+    background-color: #424A5D;
     float: left;
-    padding-right: 15px;
-    margin-top: 20px;
+    margin-right: 15px;
+    margin-top: 5px;
 }
 
 .sidebar-toggle-box .fa-bars {
@@ -51,46 +60,229 @@
 
 .logo {
     font-size: 20px;
-    color: #ffffff;
-    float: left;
-    margin-top: 15px;
+    color: white;
+    float: left;   
+    margin-top: 0px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 
-/*a.logo {
-    font-size: 20px;
-    color: #ffffff;
-    float: left;
-    margin-top: 15px;
-    text-transform: uppercase;
+header .tooltips {
+    color: white;
 }
 
-a.logo b {
-    font-weight: 900;
+header .tooltips:hover, header .tooltips:focus, {
+    color: #E26EAB;
 }
 
-a.logo:hover, a.logo:focus {
-    text-decoration: none;
-    outline: none;
+.logo, .logo:focus {
+    color: white;
+}
+.logo:hover {
+    color: #E26EAB;
 }
 
-a.logo span {
-    color: #68dff0;
+.nav {
+    list-style: none;
 }
 
-*/
+.top-menu .nav {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.logout {
+    background-color: #9C4C9D;
+    color: white;
+    font-size: 13px;
+    margin-right: 15px;
+    padding: 5px 15px!important;
+    border-radius: 5px;
+    float: right;
+}
+
+.logout:hover, .logout:focus {
+    background-color: #9C4C9D !important;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0 0 3px gray;
+}
+/***SIDEBAR**********************************/
+
+#sidebar {
+    width: 180px;
+    height: 100%;
+    background-color: #424A5D;
+    color: white;
+    position: fixed;
+    top: 52px;
+    z-index: 10;
+    padding-top: 15px;
+}
+
+#sidebar ul {
+    padding-left: 0;
+}
+
+#sidebar h5 {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.sub-menu {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.sub-menu .active {
+    background-color: #9C4C9D;
+}
+
+.sub-menu .active i, .active span {
+    color: white;
+}
+
+.sub-menu a {
+    padding: 15px 0 15px 15px;
+    color: #989898;
+    width: 100%;
+    font-size: 12px;
+    display: block;
+    
+}
+.sub-menu a:hover {
+    background-color: #E26EAB;
+    color: white;
+}
+.sub-menu i {
+    margin-right: 7px;
+}
+
+/**MAIN*****************/
+
+#main-content {
+    margin-left: 200px;
+}
 
 .wrapper {
     display: inline-block;
-    margin-top: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-top: 0px;
+    margin-top: 55px;
+    padding: 0px 15px 15px 15px;
     width: 100%;
 } 
+
+/***DASHBOARD*****************************/
+
+.box0{
+    margin-top: 20px;
+}
+
+.box1 {
+    padding: 15px;
+    text-align: center;
+    color: gray;
+    border-bottom: 1px solid #989898;
+}
+
+.box1 span {
+    font-size: 40px;
+
+}
+
+.box1 h3 {
+    text-align: center;
+}
+
+.box0:hover .box1 {
+    border-bottom: 1px solid #ffffff;
+    background-color: white;
+}
+
+.box0:hover{
+    background-color: white;
+    box-shadow: 0px 3px 2px #aab2bd;
+}
+
+.box0 p {
+    text-align: center;
+    font-size: 12px;
+    color: #f2f2f2;
+}
+
+.box0:hover p {
+    color: red;
+}
+
+.main-video p, .main-video span{
+    font-size: 13px;
+}
+
+.ds{
+    padding: 15px;
+    background-color: white;
+}
+
+.ds h3{
+    color: white;
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 50px;
+    height: 50px;
+    margin: 0;
+    background: #9C4C9D;
+    text-align: center;
+}
+
+
+
+.ds .thumb, .ds .details{
+    display: inline-block;
+    float: left;
+}
+
+.ds .details{
+    float: left;
+    width: 180px;
+}
+
+
+.ds .desc {
+    border-bottom: 1px solid #eaeaea;
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+}
+
+
+.ds .thumb {
+    width: 40px;
+    margin: 0 10px 0 20px;
+    display: block;
+    float: left;
+}
+
+.desc .details p{
+    font-size: 12px;
+}
+
+.desc .details muted{
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.desc span.badge{
+    background-color: #68DFF0;
+}
+
+.page-header {
+    margin: 15px 0 20px;
+
+}
  /**PROGRESS************/
+ 
+
 .showback {
 	background: #ffffff;
 	padding: 15px;
@@ -98,17 +290,7 @@ a.logo span {
 	box-shadow: 0px 3px 2px #aab2bd;
 }
 
-
-
-...
 /**GALLERY*************/
-.site-min-height {
-    min-height: 900px;
-}
-
-.desc{
-
-}
 
 .project:hover .photo-wrapper {
   	background-color: #F9C029;
@@ -146,6 +328,67 @@ a.logo span {
 }
 .form-panel .control-label{
 	text-align: left;
+}
+
+.round-form{
+    border-radius: 18px;
+}
+
+#focusedInput{
+    border: 1px solid red;
+}
+
+
+/***LOGIN**************************/
+
+.form-login {
+    background-color: #FFFFFF;
+    margin: 100px auto;
+    width: 320px;
+    border-radius: 7px; 
+}
+
+.form-login-heading {
+    background-color: #68DFF0;
+    color: white;
+    border-radius: 7px 7px 0 0;
+    padding: 23px 10px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.login-wrap {
+    background-color: white;
+    color: gray;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.login-wrap input {
+    margin: auto;
+    font-size: 14px;
+}
+
+.login-wrap span a {
+    font-weight: 400;
+}
+
+.login-wrap button {
+    color: gray;
+    font-size: 15px;
+}
+
+.login-wrap  .registration {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.login-wrap  .registration a{
+    padding-top: 5px;
 }
 
 
